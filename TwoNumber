@@ -1,0 +1,18 @@
+import java.util.*;
+interface TwoNumber{
+    public boolean maxNum(int n,int m);
+}
+class Main{
+    public static void main(String[] args){
+        TwoNumber tw=(a,b)-> {
+            return a<b;
+        };
+        Scanner ob=new Scanner(System.in);
+        int a=ob.nextInt();
+        int b=ob.nextInt();
+        if(tw.maxNum(a,b)==true)
+            System.out.print("b is larger "+b);
+        else
+            System.out.print("a is larger "+a);
+    }
+}
