@@ -1,0 +1,14 @@
+import java.util.*;
+interface Length{
+    int StringLenth(String len);
+}
+class Main{
+    public static void main(String[] args){
+        Scanner ob=new Scanner(System.in);
+        String str=ob.nextLine();
+        Length le=(str1)->{
+            return str1.length();
+        };
+        System.out.print(le.StringLenth(str));
+    }
+}
