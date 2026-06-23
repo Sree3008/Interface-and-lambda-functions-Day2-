@@ -1,0 +1,15 @@
+import java.util.*;
+interface OddOrEven{
+    public boolean maxNum(int n);
+}
+class Main{
+    public static void main(String[] args){
+        Scanner ob=new Scanner(System.in);
+        int n=ob.nextInt();
+        OddOrEven oe=(m)->
+        {
+            return m%2==0;
+        };
+        System.out.print(oe.maxNum(n));
+    }
+}
