@@ -1,0 +1,14 @@
+import java.util.*;
+interface SquareNumber{
+    int squareNum(int n);
+}
+class Main{
+    public static void main(String[] args){
+        Scanner ob=new Scanner(System.in);
+        int n=ob.nextInt();
+        SquareNumber sq=(m)->{
+            return m*m;
+        };
+        System.out.print(sq.squareNum(n));
+    }
+}
