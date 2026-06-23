@@ -1,0 +1,16 @@
+import java.util.*;
+// Check Whether a String is Empty
+interface Length{
+    boolean StringLenth(String len);
+}
+class Main{
+    public static void main(String[] args){
+        Scanner ob=new Scanner(System.in);
+        String str=ob.nextLine();
+        Length le=(str1)->{
+            return str1.length()==0?true:false;
+        };
+        
+        System.out.print(le.StringLenth(str));
+    }
+}
