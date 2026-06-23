@@ -1,0 +1,15 @@
+import java.util.*;
+// 
+interface Length{
+    String StringLenth(String len);
+}
+class Main{
+    public static void main(String[] args){
+        Scanner ob=new Scanner(System.in);
+        String str=ob.nextLine();
+        Length le=(str1)->{
+            return str1.toUpperCase();
+        };
+        System.out.print(le.StringLenth(str));
+    }
+}
